@@ -8,9 +8,8 @@ export async function loginUser(email, password) {
                     },
                         body: JSON.stringify({
                               email,
-                                    password
-                                        })
+                                  password
+                                 })
                                           });
-
-                                            return await response.json();
+                 return await response.json();
                                             }
