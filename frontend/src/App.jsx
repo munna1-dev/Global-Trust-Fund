@@ -1,14 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+
 function App() {
   return (
-    <div>
-      <h1>Global Trust Fund</h1>
-      <p>Digital Banking Platform</p>
-
-      <div>
-        <button>Login</button>
-        <button>Create Account</button>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
